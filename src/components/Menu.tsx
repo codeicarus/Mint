@@ -17,19 +17,19 @@ const Menu = () => {
             </div>
             <div className="px-[14px] py-[40px]">
                 <div className="flex flex-row items-center justify-between">
-                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center">
+                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
                         <img src="./pictures/crypto.png" alt="" />
                     </div>
-                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center">
+                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
                         <img src="./pictures/footer-glowing-x.png" alt="" />
                     </div>
-                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center">
+                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
                         <img src="./pictures/Bitcoin.png" alt="" />
                     </div>
-                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center">
+                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
                         <img src="./pictures/polygon.png" alt="" />
                     </div>
-                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center">
+                    <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
                         <img src="./pictures/Ethereum.png" alt="" />
                     </div>
                 </div>

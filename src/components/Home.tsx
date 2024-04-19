@@ -17,17 +17,17 @@ const Home = () => {
                     <div className="w-[520px]"></div>
                 </div>
 
-                <div className="flex flex-col 2xl:m-20 md:mx-auto">
+                <div className="flex flex-col 2xl:m-20 md:mx-auto xl:mx-auto lg:mx-auto">
                     <div className="flex flex-row md:flex-col md:items-center md:justify-center">
 
                         <div className="2xl:ml-[100px] xl:ml-[80px] lg:ml-[50px] z-10 mix-blend-luminosity md:w-[300px] md:h-auto md:bg-cover md:mt-[0px]">
                             <img className="mix-blend-luminosity" src="./pictures/Blonde_Trendy_Hairs.png" alt="Blonde_Trendy_Hairs" />
                         </div>
                         <div>
-                            <div className="ml-80 md:absolute md:top-[40px] md:right-[30px] md:ml-0">
+                            <div className="ml-80 md:absolute md:top-[40px] md:right-[30px] md:ml-0 xl:absolute xl:mt-20 lg:absolute lg:mt-20 cursor-pointer" onClick={() => {}}>
                                 <img src="./pictures/connection-button.png" alt="connection-button" />
                             </div>
-                            <div className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden">
+                            <div className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden xl:absolute xl:mt-[78px] lg:absolute lg:mt-[78px]">
                                 <img src="./pictures/Logo_1.png" alt="Logo_1" />
                             </div>
                             <div className="text-white mt-[200px] ml-[33px] flex flex-row md:-mt-[150px] z-30 relative md:flex md:flex-row md:justify-center md:items-center md:ml-0">
@@ -39,14 +39,11 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="flex felx-row items-center justify-center">
-                                <Mint
-                                    mintamount={20}
-                                    totalmintamount={2222}
-                                />
+                                <Mint/>
                             </div>
                         </div>
                     </div>
-                    <div className="2xl:px-[50px] xl:px-[100px] py-[70px]">
+                    <div className="2xl:px-[150px] xl:px-[100px] py-[70px]">
                         {
                             data.map((item, idx) => (
                                 <div className={`flex flex-col ${idx % 2 === 0 ? "items-start" : "items-end"} md:flex md:flex-col md:items-center md:py-16`} key={idx}>

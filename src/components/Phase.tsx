@@ -16,9 +16,9 @@ const Phase:React.FC<PhaseProps> = ({
     url
 }) => {
     return (
-        <div className="w-[405px] h-[130px] border-solid border-[3px] border-[#23F7DD] rounded-[40px] bg-black">
+        <div className="w-[405px] h-[130px] border-solid border-[3px] border-[#23F7DD] rounded-[40px] bg-black md:w-[360px] md:h-[120px]">
             <div className="text-white flex flex-row">
-                <div className="w-[275px] h-[127px] flex flex-col justify-center">
+                <div className="w-[275px] h-[127px] md: flex flex-col justify-center md:w-[244px] md:h-[117px]">
                     <div>
                         <div className="text-center">
                             &#8226; {label1} <div>{label2}</div>

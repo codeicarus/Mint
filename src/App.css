@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.hero-image {
+  background-image: url('../public/pictures/Deep_Space_4K4145111940_1.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  z-index: 0;
+}
+
+.vector1-image {
+  background-image: url('../public/pictures/Vector_1.png');
+  background-size: cover;
+}
+
+.vector2-image {
+  background-image: url('../public/pictures/Vector_2.png');
+  background-size: cover;
+}

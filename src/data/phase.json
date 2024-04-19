@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "label1": "DAOLABS BUILD",
+        "label2": "ON MULTIVERSX",
+        "label3": "DAOLIST",
+        "label4": "3D IS LIVE",
+        "url": "./pictures/Cog_Key_Icon.png"
+    },
+    {
+        "id": "2",
+        "label1": "COMMUNITY",
+        "label2": "ENGAGEMENT",
+        "label3": "MULTIDAO X",
+        "label4": "MUTANT IS LIVE",
+        "url": "./pictures/Baker_people_icon.png"
+    },
+    {
+        "id": "3",
+        "label1": "TOKENIZATION",
+        "label3": "UPGRADES",
+        "url": "./pictures/bolt_chart_icon.png"
+    },
+    {
+        "id": "4",
+        "label1": "GAMIFICATION",
+        "label3": "FULL MULTIVERSX",
+        "label4": "ECOSYSTEM",
+        "url": "./pictures/Puzzle_Phone_Icon.png"
+    }
+]

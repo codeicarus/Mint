@@ -1,9 +1,11 @@
+interface MenuProps {
+    isOpen: boolean;
+}
 
-const Menu = () => {
-
+const Menu: React.FC<MenuProps> = ({ isOpen }) => {
     return (
 
-        <div className="w-[520px] h-[1000px] bg-black fixed text-white px-[40px] py-[24px]">
+        <div className={`w-[520px] h-[1000px] bg-black fixed text-white px-[40px] py-[24px] z-50 transition-transform duration-300 ease-in-out transform ${isOpen ? "-translate-x-full" : "translate-x-0 "}`}>
             <div className="flex flex-row items-center">
                 <div className="px-[12px]">
                     <img src="./pictures/Logo.png" alt="" />
@@ -18,19 +20,19 @@ const Menu = () => {
             <div className="px-[14px] py-[40px]">
                 <div className="flex flex-row items-center justify-between">
                     <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
-                        <img src="./pictures/crypto.png" alt="" />
+                        <img src="./pictures/crypto.png" alt="crypto" />
                     </div>
                     <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
-                        <img src="./pictures/footer-glowing-x.png" alt="" />
+                        <img src="./pictures/footer-glowing-x.png" alt="footer-glowing-x" />
                     </div>
                     <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
-                        <img src="./pictures/Bitcoin.png" alt="" />
+                        <img src="./pictures/Bitcoin.png" alt="Bitcoin" />
                     </div>
                     <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
-                        <img src="./pictures/polygon.png" alt="" />
+                        <img src="./pictures/polygon.png" alt="polygon" />
                     </div>
                     <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer">
-                        <img src="./pictures/Ethereum.png" alt="" />
+                        <img src="./pictures/Ethereum.png" alt="Ethereum" />
                     </div>
                 </div>
             </div>

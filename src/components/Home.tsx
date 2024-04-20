@@ -3,17 +3,32 @@ import Vector1 from "./Vector1";
 import Vector2 from "./Vector2";
 import Mint from "./Mint";
 import Phase from "./Phase";
-import data from "../data/phase.json"
+import data from "../data/phase.json";
+import WalletConnectionModal from "./WalletConnectionModal";
+import { useState } from "react";
 
 const Home = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    const handleCloseModal =() => {
+        setIsModalOpen(false);
+    }
 
     return (
 
         <div className="hero-image">
             <div className="relative flex">
-                <div className="xl:hidden md:hidden lg:hidden sm:hidden">
-
-                    <Menu />
+                <div className="xl:hidden md:hidden lg:hidden">
+                    <Menu isOpen={isMenuOpen} />
                     <div className="w-[520px]"></div>
                 </div>
 
@@ -24,10 +39,10 @@ const Home = () => {
                             <img className="mix-blend-luminosity" src="./pictures/Blonde_Trendy_Hairs.png" alt="Blonde_Trendy_Hairs" />
                         </div>
                         <div>
-                            <div className="ml-80 md:absolute md:top-[40px] md:right-[30px] md:ml-0 xl:absolute xl:mt-20 lg:absolute lg:mt-20 cursor-pointer" onClick={() => {}}>
+                            <div className="ml-80 md:absolute md:top-[40px] md:right-[30px] md:ml-0 xl:absolute xl:mt-20 lg:absolute lg:mt-20 cursor-pointer" onClick={toggleModal}>
                                 <img src="./pictures/connection-button.png" alt="connection-button" />
                             </div>
-                            <div className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden xl:absolute xl:mt-[78px] lg:absolute lg:mt-[78px]">
+                            <div className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden xl:absolute xl:mt-[78px] lg:absolute lg:mt-[78px] cursor-pointer" onClick={toggleMenu}>
                                 <img src="./pictures/Logo_1.png" alt="Logo_1" />
                             </div>
                             <div className="text-white mt-[200px] ml-[33px] flex flex-row md:-mt-[150px] z-30 relative md:flex md:flex-row md:justify-center md:items-center md:ml-0">
@@ -62,34 +77,35 @@ const Home = () => {
                     <div className="px-[100px]">
                         <div className="py-[57px] text-[60px] text-center text-white"><p>TEAM</p></div>
                         <div className="flex flex-row items-center justify-between md:flex-col md:items-center md:justify-center gap-8">
-                            <div>
-                                <img src="./pictures/dr_simon.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/dr_simon.png" alt="dr_simon" />
                             </div>
-                            <div>
-                                <img src="./pictures/dr_zen.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/dr_zen.png" alt="dr_zen" />
                             </div>
-                            <div>
-                                <img src="./pictures/crosmodev.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/crosmodev.png" alt="crosmodev" />
                             </div>
-                            <div>
-                                <img src="./pictures/new_dev.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/new_dev.png" alt="new_dev" />
                             </div>
                         </div>
                         <div className="mt-[28px] mb-[175px] flex flex-row items-center justify-center gap-8 md:mt-5 md:flex-col md:items-center md:justify-center">
-                            <div>
-                                <img src="./pictures/atlas_dragon.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/atlas_dragon.png" alt="atlas_dragon" />
                             </div>
-                            <div>
-                                <img src="./pictures/liuk.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/liuk.png" alt="liuk" />
                             </div>
-                            <div>
-                                <img src="./pictures/cellar_dweller.png" alt="" />
+                            <div className="cursor-pointer">
+                                <img src="./pictures/cellar_dweller.png" alt="cellar_dweller" />
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <WalletConnectionModal isOpen={isModalOpen} onClose={handleCloseModal}></WalletConnectionModal>
         </div>
     )
 }

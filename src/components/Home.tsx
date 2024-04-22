@@ -36,34 +36,44 @@ const Home = () => {
 
         <div className="flex flex-col 2xl:m-20 md:mx-auto lg:mx-auto">
           <div className="flex flex-row md:flex-col md:items-center md:justify-center">
-            <div className="2xl:ml-[50px] xl:ml-[50px] lg:ml-[50px] z-10 mix-blend-luminosity md:w-[300px] md:h-auto md:bg-cover md:mt-[0px]">
+            <div>
               <img
-                className="mix-blend-luminosity"
                 src="./pictures/Blonde_Trendy_Hairs.png"
                 alt="Blonde_Trendy_Hairs"
+                className="mix-blend-luminosity md:w-[300px] md:h-auto md:bg-cover md:mt-[0px] xl:ml-[50px]"
               />
             </div>
-            <div className="xl:ml-10">
-              <div
-                className="ml-80 md:absolute md:top-[40px] md:right-[30px] md:ml-0 xl:absolute xl:ml-28 xl:mt-20 lg:absolute lg:mt-20 cursor-pointer"
-                onClick={toggleModal}
-              >
+            <div className="2xl:ml-[50px] lg:ml-[50px] z-10">
+              <div className="md:absolute md:top-[40px] md:right-[30px] md:ml-0 cursor-pointer 2xl:hidden xl:hidden lg:hidden">
                 <img
                   src="./pictures/connection-button.png"
                   alt="connection-button"
+                  onClick={toggleModal}
                 />
               </div>
-              <div
-                className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden xl:hidden lg:absolute lg:mt-[78px] cursor-pointer"
-                onClick={toggleMenu}
-              >
-                <img src="./pictures/Logo_1.png" alt="Logo_1" />
+              <div className="md:absolute md:top-[20px] md:left-[16px] 2xl:hidden xl:hidden cursor-pointer lg:absolute lg:left-[10px] lg:top-[70px] ">
+                <img
+                  src="./pictures/Logo_1.png"
+                  alt="Logo_1"
+                  onClick={toggleMenu}
+                />
               </div>
-              <div className="text-white mt-[200px] ml-[33px] flex flex-row md:-mt-[150px] z-20 relative md:flex md:flex-row md:justify-center md:items-center md:ml-0 xl:ml-0">
+            </div>
+
+            <div className="xl:ml-10">
+              <div className="ml-80 md:hidden xl:absolute xl:right-10 xl:top-20 lg:absolute lg:top-20 lg:right-4 cursor-pointer">
+                <img
+                  src="./pictures/connection-button.png"
+                  alt="connection-button"
+                  onClick={toggleModal}
+                />
+              </div>
+
+              <div className="text-white mt-[200px] ml-[33px] flex flex-row z-20 relative md:-mt-[150px] md:flex md:flex-row md:justify-center md:items-center md:ml-0">
                 <div>
                   <Vector1 />
                 </div>
-                <div className="px-16 md:px-0 md:ml-8 xl:px-4">
+                <div className="px-8 md:px-0 md:ml-8 xl:px-4">
                   <Vector2 />
                 </div>
               </div>
@@ -72,12 +82,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="2xl:px-[150px] xl:px-[40px] lg:px-[60px] py-[70px]">
+          <div className="2xl:px-[100px] xl:px-[40px] lg:px-[60px] py-[70px]">
             {data.map((item, idx) => (
               <div
                 className={`flex flex-col ${
                   idx % 2 === 0 ? "items-start" : "items-end"
-                } md:flex md:flex-col md:items-center md:py-16`}
+                } md:flex md:flex-col md:items-center md:py-16 py-8`}
                 key={idx}
               >
                 <Phase

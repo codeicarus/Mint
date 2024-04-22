@@ -27,7 +27,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   return (
     <div
     ref={menuRef}
-      className={`menu-container w-[520px] h-[1000px] md:w-[360px] bg-black fixed text-white px-[40px] py-[24px] md:px-[10px] md:py-[8px] z-30 transition-transform duration-300 ease-in-out transform${
+      className={`menu-container overflow-y-auto w-[520px] h-[1200px] md:w-[360px] md:h-[full] bg-black fixed text-white px-[40px] py-[24px] md:px-[10px] md:py-[8px] z-30 transition-transform duration-300 ease-in-out transform${
         isOpen
           ? "-translate-x-full "
           : "translate-x-0 md:-translate-x-full lg:-translate-x-full"
@@ -35,15 +35,15 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
       onClick={(e) => e.stopPropagation()}
     >
       <div className="flex flex-row items-center">
-        <div className="px-[12px] cursor-pointer" onClick={onClose}>
+        <div className="px-[12px] cursor-pointer md:mt-4" onClick={onClose}>
           <img src="./pictures/Logo.png" alt="" />
         </div>
-        <div className="text-[18px] text-center">DaoLabs Ecosystem</div>
+        <div className="text-[18px] text-center md:mt-4">DaoLabs Ecosystem</div>
       </div>
-      <div className="py-[30px] text-center text-[24px]">
+      <div className="py-[30px] md:py-4 text-center text-[24px]">
         HOME | ECOSYSTEM | TEAM
       </div>
-      <div className="px-[14px] py-[40px]">
+      <div className="px-[14px] py-[40px] md:py-4">
         <div className="flex flex-row items-center justify-between">
           <div className="w-[60px] h-[60px] border-[#23F7DD] border-[2px] rounded-[5px] flex items-center justify-center cursor-pointer hover:border-green-200">
             <img src="./pictures/crypto.png" alt="crypto" />
@@ -62,11 +62,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           </div>
         </div>
       </div>
-      <div className="text-[66px] text-center">
+      <div className="text-[66px] md:hidden text-center">
         <div>MULTIDAO</div>
         <div>X MUTANT</div>
       </div>
-      <div className="mt-[50px] text-[14px]">
+      <div className="md:text-[30px] md:text-center 2xl:hidden xl:hidden lg:hidden">
+      MULTIDAO X MUTANT
+      </div>
+      <div className="mt-[50px] text-[14px] md:mt-[30px]">
         MultiDao X Mutant is a collection of 5,555 unique and rare NFTs, that
         are designed to offer their owners a range of benefits and advantages
         within DaoLabs ecosystem. such as:
@@ -86,16 +89,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
         </div>
       </div>
       <div className="px-[100px] flex flex-row items-center justify-between mt-[20px] mb-[70px]">
-        <div className="w-[20px] h-[20px] bg-cover cursor-pointer">
+        <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
           <img src="./pictures/mdi_github.png" alt="" />
         </div>
-        <div className="w-[20px] h-[20px] bg-cover cursor-pointer">
+        <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
           <img src="./pictures/mdi_discord.png" alt="" />
         </div>
-        <div className="w-[20px] h-[20px] bg-cover cursor-pointer">
+        <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
           <img src="./pictures/mdi_twitter.png" alt="" />
         </div>
-        <div className="w-[20px] h-[20px] bg-cover cursor-pointer">
+        <div className="w-[40px] h-[40px] bg-cover cursor-pointer mt-3">
           <img src="./pictures/Flickr.png" alt="" />
         </div>
       </div>

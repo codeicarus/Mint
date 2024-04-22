@@ -1,6 +1,6 @@
 const Vector2 = () => {
     return (
-        <div className="flex flex-col items-center justify-between vector2-image w-[200px] h-[240px] text-center leading-none py-[33px] md:w-[160px] md:h-[192px]">
+        <div className="flex flex-col items-center justify-between vector2-image w-[200px] h-[240px] text-center leading-none py-[33px] xl:w-[160px] xl:h-[192px] lg:w-[160px] lg:h-[192px] md:w-[160px] md:h-[192px]">
             <div>
                 <h1>PRIATE SALE</h1>
                 <p className="text-xs">0.6<span className="text-[#23F7DD]">&nbsp;EGLD</span></p>

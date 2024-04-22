@@ -2,7 +2,7 @@
 const Vector1 = () => {
     return (
 
-        <div className="flex flex-col items-center justify-between vector1-image w-[200px] h-[240px] text-center leading-none py-[33px] md:w-[160px] md:h-[192px] z-20">
+        <div className="flex flex-col items-center justify-between vector1-image w-[200px] h-[240px] text-center leading-none py-[33px] xl:w-[160px] xl:h-[192px] lg:w-[160px] lg:h-[192px] md:w-[160px] md:h-[192px] z-20">
             <div>
                 <h1 className="">TOTAL</h1>
                 <p className="text-xs">5555<span className="text-[#23F7DD]">&nbsp;UNIQUE NFT</span></p>

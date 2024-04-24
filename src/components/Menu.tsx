@@ -90,16 +90,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
       </div>
       <div className="px-[100px] flex flex-row items-center justify-between mt-[20px] mb-[70px]">
         <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
-          <img src="./pictures/mdi_github.png" alt="" />
+          <img src="./pictures/mdi_github.png" alt="mdi_github" />
         </div>
         <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
-          <img src="./pictures/mdi_discord.png" alt="" />
+          <img src="./pictures/mdi_discord.png" alt="mdi_discord" />
         </div>
         <div className="w-[40px] h-[40px] bg-cover cursor-pointer">
-          <img src="./pictures/mdi_twitter.png" alt="" />
+          <img src="./pictures/mdi_twitter.png" alt="mdi_twitter" />
         </div>
         <div className="w-[40px] h-[40px] bg-cover cursor-pointer mt-3">
-          <img src="./pictures/Flickr.png" alt="" />
+          <img src="./pictures/Flickr.png" alt="Flickr" />
         </div>
       </div>
     </div>

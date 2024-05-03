@@ -6,7 +6,7 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
-    const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       if (isOpen && !e.target) return;
@@ -26,12 +26,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
   return (
     <div
-    ref={menuRef}
-      className={`menu-container overflow-y-auto w-[520px] h-[1200px] md:w-[360px] md:h-[full] bg-black fixed text-white px-[40px] py-[24px] md:px-[10px] md:py-[8px] z-30 transition-transform duration-300 ease-in-out transform${
-        isOpen
+      ref={menuRef}
+      className={`menu-container overflow-y-auto w-[520px] h-[1200px] md:w-[360px] md:h-[full] bg-black fixed text-white px-[40px] py-[24px] md:px-[10px] md:py-[8px] z-30 transition-transform duration-300 ease-in-out transform${isOpen
           ? "-translate-x-full "
           : "translate-x-0 md:-translate-x-full lg:-translate-x-full"
-      }`}
+        }`}
       onClick={(e) => e.stopPropagation()}
     >
       <div className="flex flex-row items-center">
@@ -67,7 +66,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
         <div>X MUTANT</div>
       </div>
       <div className="md:text-[30px] md:text-center 2xl:hidden xl:hidden lg:hidden">
-      MULTIDAO X MUTANT
+        MULTIDAO X MUTANT
       </div>
       <div className="mt-[50px] text-[14px] md:mt-[30px]">
         MultiDao X Mutant is a collection of 5,555 unique and rare NFTs, that
